@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--项目添加-->
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#3e4ce6</color>
+    <color name="tv_color1">#01b0ee</color>
+    <color name="hui">#504f4f</color>
+    <color name="red">#f70808</color>
+    <color name="green">#08f710</color>
+    <color name="hui_light">#c4c2c2</color>
+    <color name="hui_sss">#ede7e4e3</color>
+    <color name="default_hui">#f0f0f0</color>
+
+    <color name="blue_sky">#2283C5</color>
+    <color name="tv_color3">#333333</color>
+    <color name="transafe">#50000000</color>
+
+</resources>

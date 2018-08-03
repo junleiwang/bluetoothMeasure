@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dat_infos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/dat_info_title"
+        layout="@layout/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dat_info_title"
+        android:scrollbars="none"
+        android:layout_above="@+id/tv_add">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_dat_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_excle">
+
+                <TextView
+                    android:id="@+id/tv_point_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/point_name"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/view_1"
+                    android:layout_width="0.5dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="75dp"
+                    android:background="@color/hui" />
+
+                <TextView
+                    android:id="@+id/tv_pointX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/view_1"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/pointX"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/view_2"
+                    android:layout_width="0.5dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="150dp"
+                    android:background="@color/hui" />
+
+                <TextView
+                    android:id="@+id/tv_pointY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/view_2"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/pointY"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/view_3"
+                    android:layout_width="0.5dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="225dp"
+                    android:background="@color/hui" />
+
+                <TextView
+                    android:id="@+id/tv_pointH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/view_3"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/pointH"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/view_4"
+                    android:layout_width="0.5dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="300dp"
+                    android:background="@color/hui" />
+
+                <TextView
+                    android:id="@+id/tv_add_edit"
+                    android:layout_toRightOf="@+id/view_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="16dp"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:lines="1"
+                    android:text="操作"
+                    android:textSize="12sp"/>
+
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lv_dat_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_dat_info">
+
+            </ListView>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_text"
+        android:text="添加到测量库"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

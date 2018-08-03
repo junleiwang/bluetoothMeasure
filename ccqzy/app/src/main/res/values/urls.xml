@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--本地测试-->
+    <!-- <string name="server_host">http://192.168.1.108:8080/api</string>-->
+    <!--线上外网-->
+    <!--<string name="server_host">http://192.168.1.124/api</string>-->
+
+    <!--外网-->
+   <!-- <string name="server_host">http://2008zs3876.imwork.net:26647/api</string>-->
+
+    <!--新的外网-->
+    <string name="server_host">http://www.prodetecyun.com/api</string>
+    <!--登录-->
+    <string name="url_login">/Account/ClientDeviceLogin</string>
+    <!-- 个人注册 -->
+    <string name="url_regist">/services/app/Measure/Register</string>
+
+    <!-- 个人注册测试 -->
+    <string name="url_regist_test">/Account/ClientDeviceRegister</string>
+
+
+    <!-- 上传 -->
+    <!--<string name="url_my_upload">/services/app/Measure/PostCarbodyData</string>-->
+    <string name="url_my_upload">/services/app/Carbody/PostCarbodyData</string>
+
+    <!-- 请求站点 -->
+    <string name="url_request_point">/services/app/Carbody/GetStandPoints</string>
+
+
+
+
+    <!-- 验证旧密码是否正确 -->
+    <string name="url_test_password">/login/verifyPwd</string>
+
+    <!-- 修改密码 -->
+    <string name="url_change_password">/login/editPwd</string>
+
+    <!-- 30.文件上传 -->
+    <string name="url_fileUpload">/file/padUpload</string>
+    <!-- 31.文件下载 -->
+    <string name="url_fileDownload">/padFile/fileDownload</string>
+
+    <!-- 12.文件下载列表 -->
+    <string name="url_msgFileList">/padMeeting/meetingFiles</string>
+    <!-- 13.删除文件接口 -->
+    <string name="url_msgFileDelete">/padMeeting/deleteFile</string>
+    <!-- 版本更新version.json -->
+    <string name="url_version">/download/app/rsc_version.json</string>
+
+</resources>

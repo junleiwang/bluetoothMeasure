@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_date_modle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ccqzy.activitys.DateModleActivity">
+
+    <include
+        android:id="@+id/title_date_modle"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@+id/title_date_modle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_modle_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="模块列表"
+            android:textSize="16sp"/>
+
+        <HorizontalScrollView
+            android:layout_below="@+id/tv_modle_list"
+            android:layout_above="@+id/tv_down_modle"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_modle_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv_down_modle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_selector_regist"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="下载模板"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_selector_regist"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="下一步"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_dat_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/bg_excle">
+
+        <View
+            android:id="@+id/view_0"
+            android:layout_width="0.5dp"
+            android:layout_height="31dp"
+            android:background="@color/hui" />
+
+        <View
+            android:id="@+id/view_01"
+            android:layout_width="0.5dp"
+            android:layout_height="31dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/hui" />
+
+        <TextView
+            android:id="@+id/tv_point_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/point_name"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="0.5dp"
+            android:layout_height="31dp"
+            android:layout_toRightOf="@+id/tv_point_name"
+            android:background="@color/hui" />
+
+        <TextView
+            android:id="@+id/tv_pointX12"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view_1"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/pointX"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="0.5dp"
+            android:layout_height="31dp"
+            android:layout_toRightOf="@+id/tv_pointX12"
+            android:background="@color/hui" />
+
+        <TextView
+            android:id="@+id/tv_pointY12"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view_2"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/pointY"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view_3"
+            android:layout_width="0.5dp"
+            android:layout_height="31dp"
+            android:layout_toRightOf="@+id/tv_pointY12"
+            android:background="@color/hui" />
+
+        <TextView
+            android:id="@+id/tv_pointH12"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view_3"
+            android:gravity="center"
+            android:lines="1"
+            android:text="坐标H"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/rl_dat_info"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/hui"/>
+
+
+
+</RelativeLayout>

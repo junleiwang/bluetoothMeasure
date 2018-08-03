@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="projectName">
+        <item>CRH3 </item>
+        <item>CRH2 </item>
+        <item>CRH1 </item>
+        <item>CRH0 </item>
+    </string-array>
+
+    <string-array name="composition">
+        <item>CBSH </item>
+        <item>CBSZ </item>
+    </string-array>
+
+    <string-array name="carModle">
+        <item>CC   </item>
+        <item>MC   </item>
+        <item>BC   </item>
+    </string-array>
+
+    <string-array name="carType">
+        <item>TP01 </item>
+        <item>TP02 </item>
+        <item>TP03 </item>
+        <item>TP04 </item>
+        <item>TP05 </item>
+        <item>TP06 </item>
+    </string-array>
+
+    <string-array name="steelNum">
+        <item>0001 </item>
+        <item>0002 </item>
+        <item>0003 </item>
+        <item>0004 </item>
+        <item>0005 </item>
+        <item>0006 </item>
+    </string-array>
+
+    <string-array name="column">
+        <item>001  </item>
+        <item>002  </item>
+        <item>003  </item>
+        <item>004  </item>
+        <item>005  </item>
+        <item>006  </item>
+        <item>007  </item>
+    </string-array>
+
+    <string-array name="measureNum">
+        <item>1     </item>
+        <item>2     </item>
+        <item>3     </item>
+        <item>4     </item>
+        <item>5     </item>
+    </string-array>
+
+    <string-array name="oriention">
+        <item>1     </item>
+        <item>2     </item>
+    </string-array>
+
+</resources>

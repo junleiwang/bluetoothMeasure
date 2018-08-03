@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_file_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ccqzy.activitys.FileMessageActivity">
+
+    <include
+        android:id="@+id/title_file_message"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_reback_result"
+        android:layout_below="@+id/title_file_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_project_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="项目名："
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_composition1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="组成："
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_car_modle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="车辆类型："
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_car_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="车型"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_steel_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="钢号"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_column1"
+                android:layout_below="@+id/tv_point_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="列次"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_measure_number1"
+                android:layout_below="@+id/tv_point_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="次数"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_car_oriention1"
+                android:layout_below="@+id/tv_point_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="车辆方位"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_point_value"
+            android:layout_toRightOf="@+id/ll_file_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tv_project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_text"
+                android:hint="CRH3"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_spinner">
+            <Spinner
+                android:id="@+id/sp_project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:entries="@array/projectName">
+            </Spinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_composition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_text"
+                android:hint="CBSH"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_spinner">
+                <Spinner
+                    android:id="@+id/sp_composition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:entries="@array/composition">
+                </Spinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_car_modle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_text"
+                android:hint="CC"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_spinner">
+                <Spinner
+                    android:id="@+id/sp_car_modle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:entries="@array/carModle">
+                </Spinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_car_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_text"
+                android:hint="TP02"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_spinner">
+                <Spinner
+                    android:id="@+id/sp_car_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:entries="@array/carType">
+                </Spinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_steel_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_text"
+                android:hint="0001"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_spinner">
+                <Spinner
+                    android:id="@+id/sp_steel_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:entries="@array/steelNum">
+                </Spinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_column"
+                android:layout_below="@+id/tv_point_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_text"
+                android:hint="001"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_spinner">
+                <Spinner
+                    android:id="@+id/sp_column"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:entries="@array/column">
+                </Spinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_measure_number"
+                android:layout_below="@+id/tv_point_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_text"
+                android:hint="1"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_spinner">
+                <Spinner
+                    android:id="@+id/sp_measure_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:entries="@array/measureNum">
+                </Spinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_car_oriention"
+                android:layout_below="@+id/tv_point_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_text"
+                android:hint="2"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_spinner">
+                <Spinner
+                    android:id="@+id/sp_car_oriention"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:entries="@array/oriention">
+                </Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_makesure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_selector_regist"
+        android:text="@string/ok"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

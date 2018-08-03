@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="140dp"
+    android:background="@drawable/alertdialog_type"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/dialog_title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="请输入管理密码"
+            android:background="@drawable/bg_selector_updown"
+            android:textColor="@color/tv_color3" />
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:textColor="@color/tv_color3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/alertdialog_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_change_color"
+            android:gravity="center"
+            android:textColor="@color/blue_sky" />
+
+        <LinearLayout
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cccccc"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/alertdialog_cansure"
+            android:layout_width="0dp"       
+            android:layout_height="match_parent"
+            android:background="@drawable/cancle_textchange_style"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/blue_sky" />
+    </LinearLayout>
+
+</LinearLayout>

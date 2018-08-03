@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ccqzy</string>
+
+
+    <string name="commany">请输入单位名</string>
+    <string name="user_name">请输入用户名</string>
+    <string name="password">请输入密码    </string>
+    <string name="password2">请再次输入密码</string>
+    <string name="register">立即注册</string>
+    <string name="register1">还没有账号?</string>
+    <string name="mac_address">本机mac地址</string>
+    <string name="back">返回</string>
+    <string name="title">当前模块</string>
+    <string name="automatic_measure">自动测量</string>
+    <string name="manual_measure">测量学习</string>
+
+    <string name="ok">确定</string>
+    <string name="cancle">取消</string>
+    <string name="measure">测量</string>
+    <string name="turn_over">反面</string>
+    <string name="agin_measure">重测</string>
+    <string name="next_point">下一点</string>
+    <string name="save">保存</string>
+    <string name="add_point">加点</string>
+    <string name="delete_point">删点</string>
+    <string name="stop">终止</string>
+    <string name="retest">补测</string>
+    <string name="export">导出</string>
+    <string name="upload">上传</string>
+    <string name="import_modle">导入模板</string>
+
+    <string name="begin_measure">开始测量</string>
+    <string name="measure_result">计算</string>
+    <string name="point_list">列表</string>
+
+    <string name="point_name">测点名</string>
+    <string name="pointX">坐标X</string>
+    <string name="pointY">坐标Y</string>
+    <string name="pointH">坐标H</string>
+</resources>

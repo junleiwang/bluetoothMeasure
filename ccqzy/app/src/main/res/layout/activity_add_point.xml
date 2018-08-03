@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_point"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ccqzy.activitys.AddPointActivity">
+
+    <include
+        android:id="@+id/title_add_point"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/sv_build_station"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_add_point"
+        android:layout_above="@+id/ll_btn">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_reback_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_point_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="序号："
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_point_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="点名："
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_pointX1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="横坐标 X"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_pointY1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="纵坐标 Y"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_pointH1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="纵坐标 Z"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_equipmentH1"
+                        android:layout_below="@+id/tv_point_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="仪器高"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_remarks1"
+                        android:layout_below="@+id/tv_point_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="备注："
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_point_value"
+                    android:layout_toRightOf="@+id/ll_point_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/tv_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_text"
+                        android:hint="输入点序号  "
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/tv_point_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_text"
+                        android:hint="输入点名称  "
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/tv_pointX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_text"
+                        android:hint="输入x坐标值"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/tv_pointY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_text"
+                        android:hint="输入y坐标值"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/tv_pointH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_text"
+                        android:hint="输入z坐标值"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/tv_equipmentH"
+                        android:layout_below="@+id/tv_point_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_text"
+                        android:hint="输入仪器高  "
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/tv_remarks"
+                        android:layout_below="@+id/tv_point_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_text"
+                        android:hint="输入备注      "
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_measure_btn"
+                android:layout_below="@+id/rl_reback_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/bg_selector_rl"
+                android:text="测量数据"
+                android:textSize="22sp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_add_point"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:background="@drawable/bg_selector_regist"
+            android:gravity="center_horizontal"
+            android:text="@string/add_point"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_save_point"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:background="@drawable/bg_selector_regist"
+            android:gravity="center_horizontal"
+            android:text="@string/save"
+            android:textSize="19sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_cancle_point"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:background="@drawable/bg_selector_regist"
+            android:gravity="center_horizontal"
+            android:text="@string/cancle"
+            android:textSize="19sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_measure_result"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:background="@drawable/bg_selector_regist"
+            android:gravity="center_horizontal"
+            android:text="@string/point_list"
+            android:textSize="19sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dat_infos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ccqzy.activitys.DatInfosActivity">
+
+    <include
+        android:id="@+id/dat_info_title"
+        layout="@layout/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_point_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@+id/dat_info_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_dat_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_excle"
+                android:descendantFocusability="blocksDescendants">
+
+                <RelativeLayout
+                    android:id="@+id/rl_up_down1"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_centerHorizontal="true"
+                        android:lines="1"
+                        android:text="移动"
+                        android:textSize="16sp"
+                        android:textColor="@color/green"/>
+
+
+                    <View
+                        android:id="@+id/view_00"
+                        android:layout_width="0.5dp"
+                        android:layout_height="31dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/hui"
+                        android:layout_marginLeft="0.5dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_btn_measure"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/rl_up_down1"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="点序号"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_0"
+                    android:layout_width="0.5dp"
+                    android:layout_height="31dp"
+                    android:layout_toRightOf="@+id/tv_btn_measure"
+                    android:background="@color/hui" />
+
+                <TextView
+                    android:id="@+id/tv_point_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/view_0"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="点名"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_1"
+                    android:layout_width="0.5dp"
+                    android:layout_height="31dp"
+                    android:layout_toRightOf="@+id/tv_point_name"
+                    android:background="@color/hui" />
+
+                <TextView
+                    android:id="@+id/tv_pointX12"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/view_1"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/pointX"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_2"
+                    android:layout_width="0.5dp"
+                    android:layout_height="31dp"
+                    android:layout_toRightOf="@+id/tv_pointX12"
+                    android:background="@color/hui" />
+
+                <TextView
+                    android:id="@+id/tv_pointY12"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/view_2"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/pointY"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_3"
+                    android:layout_width="0.5dp"
+                    android:layout_height="31dp"
+                    android:layout_toRightOf="@+id/tv_pointY12"
+                    android:background="@color/hui" />
+
+                <TextView
+                    android:id="@+id/tv_pointH12"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/view_3"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/pointH"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_4"
+                    android:layout_width="0.5dp"
+                    android:layout_height="31dp"
+                    android:layout_toRightOf="@+id/tv_pointH12"
+                    android:background="@color/hui" />
+
+                <TextView
+                    android:id="@+id/tv_cancle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/view_4"
+                    android:gravity="center"
+                    android:text="操作"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lv_modle_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_edit_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector_rl"
+            android:text="调序"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_save_modle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_selector_rl"
+            android:text="保存"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tv_copy_modle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_selector_rl"
+            android:text="复制新模板"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

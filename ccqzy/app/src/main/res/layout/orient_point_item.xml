@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_dat_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/bg_excle">
+
+        <TextView
+            android:id="@+id/tv_btn_measure"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:lines="1"
+            android:text="@string/measure"
+            android:background="@drawable/bg_selector_rl"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view_0"
+            android:layout_width="0.5dp"
+            android:layout_height="31dp"
+            android:layout_toRightOf="@+id/tv_btn_measure"
+            android:background="@color/hui" />
+
+        <TextView
+            android:id="@+id/tv_point_name"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view_0"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:lines="1"
+            android:text=""
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="0.5dp"
+            android:layout_height="31dp"
+            android:layout_toRightOf="@+id/tv_point_name"
+            android:background="@color/hui" />
+
+        <TextView
+            android:id="@+id/tv_pointX12"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view_1"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:gravity="center"
+            android:lines="1"
+            android:text=""
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="0.5dp"
+            android:layout_height="31dp"
+           android:layout_toRightOf="@+id/tv_pointX12"
+            android:background="@color/hui" />
+
+        <TextView
+            android:id="@+id/tv_pointY12"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/view_2"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:lines="1"
+            android:gravity="center"
+            android:text=""
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view_3"
+            android:layout_width="0.5dp"
+            android:layout_height="31dp"
+           android:layout_toRightOf="@+id/tv_pointY12"
+            android:background="@color/hui" />
+
+        <TextView
+            android:id="@+id/tv_pointH12"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_pointY12"
+            android:layout_toEndOf="@+id/tv_pointY12" />
+
+        <View
+            android:id="@+id/view_4"
+            android:layout_width="0.5dp"
+            android:layout_height="31dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/hui" />
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view_4"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

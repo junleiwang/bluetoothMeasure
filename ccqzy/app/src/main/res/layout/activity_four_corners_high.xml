@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_four_corners_high"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ccqzy.activitys.FourCornersHighActivity">
+
+    <include
+        android:id="@+id/title_four_high"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_below="@+id/title_four_high"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_foke_value"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:id="@+id/ll_foke_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_foke_original"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_selector_rl">
+
+                    <TextView
+                        android:id="@+id/tv_original"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:layout_centerHorizontal="true"
+                        android:text="原始值"
+                        android:textSize="16sp"/>
+
+                    <LinearLayout
+                        android:layout_below="@+id/tv_original"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:id="@+id/rl_original_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp">
+
+                            <LinearLayout
+                                android:id="@+id/ll_original_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_original_foke_l1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_selector_rl">
+
+                                    <TextView
+                                        android:id="@+id/tv_original_foke11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:text="Foke_L1"
+                                        android:textColor="@color/blue"
+                                        android:textSize="14dp" />
+
+                                    <EditText
+                                        android:id="@+id/tv_original_foke1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_original_foke11"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/bg_text"
+                                        android:hint="24.351"
+                                        android:textSize="12sp" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_original_foke_l2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_selector_rl">
+
+                                    <TextView
+                                        android:id="@+id/tv_original_foke21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Foke_R1"
+                                        android:textColor="@color/blue"
+                                        android:textSize="14dp" />
+
+                                    <EditText
+                                        android:id="@+id/tv_original_foke2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_original_foke21"
+                                        android:layout_centerHorizontal="true"
+                                        android:lines="1"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/bg_text"
+                                        android:hint="-20.235"
+                                        android:textSize="12sp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_original_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/ll_original_foke_l2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_original_foke_l3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_selector_rl">
+
+                                    <TextView
+                                        android:id="@+id/tv_original_foke31"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Foke_L2"
+                                        android:textColor="@color/blue"
+                                        android:textSize="14dp" />
+
+                                    <EditText
+                                        android:id="@+id/tv_original_foke3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_original_foke31"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@drawable/bg_text"
+                                        android:layout_marginTop="10dp"
+                                        android:hint="5.857"
+                                        android:textSize="12sp" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_original_foke_l4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_selector_rl">
+
+                                    <TextView
+                                        android:id="@+id/tv_original_foke41"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Foke_R2"
+                                        android:textColor="@color/blue"
+                                        android:textSize="14dp" />
+
+                                    <EditText
+                                        android:id="@+id/tv_original_foke4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_original_foke41"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@drawable/bg_text"
+                                        android:layout_marginTop="10dp"
+                                        android:hint="15.257"
+                                        android:textSize="12sp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_foke_measuring"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_foke">
+
+                    <TextView
+                        android:id="@+id/tv_measuring"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="测量值"
+                        android:textSize="16sp"/>
+
+                    <LinearLayout
+                        android:layout_below="@+id/tv_measuring"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:id="@+id/rl_measuring_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp">
+
+                            <LinearLayout
+                                android:id="@+id/ll_measuring_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_measuring_foke_l1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_foke">
+
+                                    <TextView
+                                        android:id="@+id/tv_measuring_foke11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="L1测量"
+                                        android:textColor="@color/blue"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_measuring_foke1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_measuring_foke11"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:text=""
+                                        android:textSize="16sp" />
+
+                                </RelativeLayout>
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/hui"/>
+                                <RelativeLayout
+                                    android:id="@+id/rl_measuring_foke_l2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_foke">
+
+                                    <TextView
+                                        android:id="@+id/tv_measuring_foke21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="R1测量"
+                                        android:textColor="@color/blue"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_measuring_foke2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_measuring_foke21"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:text=""
+                                        android:textSize="16sp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/hui"/>
+                        <RelativeLayout
+                            android:id="@+id/rl_measuring_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/ll_measuring_foke_l2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_measuring_foke_l3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_foke">
+
+                                    <TextView
+                                        android:id="@+id/tv_measuring_foke31"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="L2测量"
+                                        android:textColor="@color/blue"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_measuring_foke3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_measuring_foke31"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:text=""
+                                        android:textSize="16sp" />
+
+                                </RelativeLayout>
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/hui"/>
+                                <RelativeLayout
+                                    android:id="@+id/rl_measuring_foke_l4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_foke">
+
+                                    <TextView
+                                        android:id="@+id/tv_measuring_foke41"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="R2测量"
+                                        android:textColor="@color/blue"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_measuring_foke4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_measuring_foke41"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:text=""
+                                        android:textSize="16sp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="变化量"
+            android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/ll_bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_foke_l1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_selector_rl">
+
+                    <TextView
+                        android:id="@+id/iv_bluetooth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Foke_L1"
+                        android:textColor="@color/blue"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_foke_l1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_bluetooth"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_foke_r1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_selector_rl">
+
+                    <TextView
+                        android:id="@+id/iv_modle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Foke_R1"
+                        android:textColor="@color/blue"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_foke_r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_modle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_measure_"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/ll_measure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_foke_l2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_selector_rl">
+
+                    <TextView
+                        android:id="@+id/iv_build_station"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Foke_L2"
+                        android:textColor="@color/blue"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_foke_l2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_build_station"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_foke_r2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_selector_rl">
+
+                    <TextView
+                        android:id="@+id/iv_measure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Foke_R2"
+                        android:textColor="@color/blue"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_foke_r2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_measure"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text=""
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

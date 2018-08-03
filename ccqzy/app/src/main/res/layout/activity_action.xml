@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_action"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.ccqzy.activitys.ActionActivity">
+
+    <include
+        android:id="@+id/title_action"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_action">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_action"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/login_pic2" />
+
+            <RelativeLayout
+                android:id="@+id/rl_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_action">
+
+                <RelativeLayout
+                    android:id="@+id/rl_bluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_pic">
+
+                    <LinearLayout
+                        android:id="@+id/ll_bluetooth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_bluetooth_commit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_selector_rl">
+
+                            <ImageView
+                                android:id="@+id/iv_bluetooth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/bluetooth" />
+
+                            <TextView
+                                android:id="@+id/tv_bluetooth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_bluetooth"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="蓝牙通讯"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_modle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_selector_rl">
+
+                            <ImageView
+                                android:id="@+id/iv_modle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/data" />
+
+                            <TextView
+                                android:id="@+id/tv_modle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_modle"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="数据模板"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_measure_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_bluetooth">
+
+                    <LinearLayout
+                        android:id="@+id/ll_measure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_build_station"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_selector_rl">
+
+                            <ImageView
+                                android:id="@+id/iv_build_station"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/buildstation" />
+
+                            <TextView
+                                android:id="@+id/tv_"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_build_station"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="建立测站"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_measure"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_selector_rl">
+
+                            <ImageView
+                                android:id="@+id/iv_measure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/directional" />
+
+                            <TextView
+                                android:id="@+id/tv_measure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_measure"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="数据测量"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_measure_leveling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_measure_">
+
+                    <LinearLayout
+                        android:id="@+id/ll_deflection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_deflection"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_selector_rl">
+
+                            <ImageView
+                                android:id="@+id/iv_deflection"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/measure" />
+
+                            <TextView
+                                android:id="@+id/tv_deflection"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_deflection"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="挠度测量"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_four_leveling"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_selector_rl">
+
+                            <ImageView
+                                android:id="@+id/iv_four_leveling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/control" />
+
+                            <TextView
+                                android:id="@+id/tv_four_leveling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_four_leveling"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="四角高测平"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_out_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_measure_leveling">
+
+                    <LinearLayout
+                        android:id="@+id/ll_out_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_export_data"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_selector_rl">
+
+                            <ImageView
+                                android:id="@+id/iv_export"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/importdate" />
+
+                            <TextView
+                                android:id="@+id/tv_export"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_export"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="数据导出"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_update"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_selector_rl">
+
+                            <ImageView
+                                android:id="@+id/iv_update"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/up" />
+
+                            <TextView
+                                android:id="@+id/tv_update"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_update"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="数据上传"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

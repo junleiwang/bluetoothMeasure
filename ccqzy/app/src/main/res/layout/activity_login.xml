@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.ccqzy.activitys.LoginActivity">
+
+    <include
+        android:id="@+id/title_login"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_pic"
+        android:layout_below="@+id/title_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_show_pic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/login_pic2"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_pic"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/ll_commpany_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_commpany_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单  位 :"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_company"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_text"
+                android:hint="@string/commany"
+                android:textColorHint="@color/hui_light"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_user"
+            android:layout_below="@+id/ll_commpany_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用  户 :"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_text"
+                android:hint="@string/user_name"
+                android:textColorHint="@color/hui_light"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_user"
+            android:layout_marginTop="20dp"
+           android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密  码 :"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_text"
+                android:password="true"
+                android:hint="@string/password"
+                android:textColorHint="@color/hui_light"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist"
+        android:layout_below="@+id/rl_user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:id="@+id/tv_regist1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/register1"/>
+
+    <TextView
+        android:id="@+id/tv_regist"
+        android:layout_toRightOf="@+id/tv_regist1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_regist1"
+        android:text="@string/register"
+        android:textColor="@color/blue"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_below="@+id/rl_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_selector"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="22sp"/>
+
+
+</RelativeLayout>
